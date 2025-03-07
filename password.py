@@ -7,10 +7,35 @@ st.set_page_config(page_title="Password Checker by Mubashira Tanveer", page_icon
 # custom css
 st.markdown("""
     <style>
-        .main{text-align: center;}
-        .stTextInput{width:60% !important; matgin:auto}      
-        .stButton button{width :50%; background-color: #4CAF50; color: white; font-size: 18px;} 
-        .stButton button:hover{background-color:#45a049}      
+        body {
+            background: linear-gradient(135deg, #1E1E1E, #2A2A72);
+            font-family: 'Poppins', sans-serif;
+        }
+        .stTextInput input {
+            border-radius: 15px;
+            padding: 14px;
+            background: rgba(255, 255, 255, 0.1);
+            color: black;
+            text-align: center;
+            font-size: 18px;
+            box-shadow: 0px 0px 8px rgba(0, 255, 255, 0.6);
+        }
+        .stButton button {
+            background: linear-gradient(135deg, #00C9FF, #92FE9D);
+            color: black;
+            font-size: 18px;
+            padding: 14px 24px;
+            border-radius: 15px;
+            transition: 0.3s;
+            border: none;
+            font-weight: bold;
+            box-shadow: 0px 4px 15px rgba(0, 255, 255, 0.7);
+        }
+        .stButton button:hover {
+            background: linear-gradient(135deg, #92FE9D, #00C9FF);
+            transform: scale(1.05);
+            box-shadow: 0px 4px 20px rgba(0, 255, 255, 1);
+        }      
      </style>
 """, unsafe_allow_html=True
 )
